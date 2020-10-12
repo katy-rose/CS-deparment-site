@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UTD CS Students</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body onload="getDate()">
+
+<div class="header">
+	<h1>The University of Texas at Dallas Department of Computer Science</h1>
+</div>
+
+<div class="container">
+	<a href="index.html">Home</a>
+	<a href="faculty.html">Faculty</a>
+	<a href="students.html">Students</a>
+	<a href="admissions.html">Admissions</a>
+	<a href="contact.html">Contact</a>
+	<a href="research.html">Research</a>
+</div>
+
+<div class="loginContainer">
+	<a href="register.html">Register</a>
+	<a href="login.html">Login</a>
+	<a href="logout.php">Logout</a>
+</div>
+
+<div class="left">
+	<img src="images/logo.jfif" id="logo">	
+</div>
+
+<div class="middle">
+	<h2 id="midHeader">Students</h2>
+
+	<form class="surveyContainer">
+		<div class="surveySummary">
+			<h2>Survey Summary</h2>
+		</div>
+		<div class="surveyStart">
+			<h2>Fall 2020 Student Survey</h2>
+			<p>Please give us your feedback on fall 2020 class formats.</p>
+			<button type="button" onclick="beginSurvey()">Begin Survey</button>
+		</div>
+		<div class="question">
+			<h4>What is your classification?</h4>
+			<div id="classification"></div>
+			<div class="radio">
+				<input type="radio" name="classification" value="Freshman" id="Freshman">
+				<label for="Freshman">Freshman</label><br>
+				<input type="radio" name="classification" value="Sophomore" id="Sophomore">
+				<label for="Sophomore">Sophomore</label><br>
+				<input type="radio" name="classification" value="Junior" id="Junior">
+				<label for="Junior">Junior</label><br>
+				<input type="radio" name="classification" value="Senior" id="Senior">
+				<label for="Senior">Senior</label><br>
+				<input type="radio" name="classification" value="Graduate" id="Graduate">
+				<label for="Graduate">Graduate</label><br>
+			</div>
+		</div>
+		<div class="question">
+			<h4>What School are you in?</h4>
+			<div id="school"></div>
+			<div class="radio">
+				<input type="radio" name="school" id="NSM" value="School of Natural Sciences and Mathematics">
+				<label for="NSM">School of Natural Sciences and Mathematics</label><br>
+				<input type="radio" name="school" id="JSOM" value="Naveen Jindal School of Management"> 
+				<label for="JSOM">Naveen Jindal School of Management</label><br>
+				<input type="radio" name="school" id="ECS" value="Erik Jonsson School of Engineering and Computer Science">
+				<label for="ECS">Erik Jonsson School of Engineering and Computer Science</label><br>
+				<input type="radio" name="school" id="EPPS" value="School of Economic, Political and Policy Sciences">
+				<label for="EPPS">School of Economic, Political and Policy Sciences</label><br>
+				<input type="radio" name="school" id="BBS" value="School of Behavioral and Brain Sciences">
+				<label for="BBS">School of Behavioral and Brain Sciences</label><br>
+				<input type="radio" name="school" id="ATEC" value="School of Arts, Technology, and Emerging Communication">
+				<label for="ATEC">School of Arts, Technology, and Emerging Communication</label><br>
+				<input type="radio" name="school" id="AHS" value="School of Arts and Humanities">
+				<label for="AHS">School of Arts and Humanities</label><br>
+				<input type="radio" name="school" id="IDS" value="School of Interdisciplinary Studies">
+				<label for="IDS">School of Interdisciplinary Studies</label><br>
+			</div>	
+		</div>
+		<div class="question">
+			<h4>If classes were to go in person this fall, how likely are you take class?</h4>
+			<div id="inPerson"></div>
+			<div class="radio">
+				<input type="radio" name="inPerson" value="Extremely likely" id="EL">
+				<label for="EL">Extremely likely</label><br>
+				<input type="radio" name="inPerson" value="Somewhat likely" id="SL">
+				<label for="SL">Somewhat likely</label><br>
+				<input type="radio" name="inPerson" value="Neither" id="Neither">
+				<label for="Neither">Neither likely or unlikely</label><br>
+				<input type="radio" name="inPerson" value="Somewhat unlikely" id="SU">
+				<label for="SU">Somewhat unlikely</label><br>
+				<input type="radio" name="inPerson" value="Extremely unlikely" id="EU">
+				<label for="EU">Extremely unlikely</label><br>
+			</div>
+		</div>
+		<div class="question">
+			<h4>If classes were to go online this fall, how likely are you take class?</h4>
+			<div id="online"></div>
+			<div class="radio">
+				<input type="radio" name="online" value="Extremely likely" id="EL">
+				<label for="EL">Extremely likely</label><br>
+				<input type="radio" name="online" value="Somewhat likely" id="SL">
+				<label for="SL">Somewhat likely</label><br>
+				<input type="radio" name="online" value="Neither" id="Neither">
+				<label for="Neither">Neither likely or unlikely</label><br>
+				<input type="radio" name="online" value="Somewhat unlikely" id="SU">
+				<label for="SU">Somewhat unlikely</label><br>
+				<input type="radio" name="online" value="Extremely unlikely" id="EU">
+				<label for="EU">Extremely unlikely</label><br>
+			</div> 
+		</div>
+		<div class="question">
+			<h4>If classes were to go online this fall, how likely are you take a gap semester?</h4>
+			<div id="gap"></div>
+			<div class="radio">
+				<input type="radio" name="gap" value="Extremely likely" id="EL">
+				<label for="EL">Extremely likely</label><br>
+				<input type="radio" name="gap" value="Somewhat likely" id="SL">
+				<label for="SL">Somewhat likely</label><br>
+				<input type="radio" name="gap" value="Neither" id="Neither">
+				<label for="Neither">Neither likely or unlikely</label><br>
+				<input type="radio" name="gap" value="Somewhat unlikely" id="SU">
+				<label for="SU">Somewhat unlikely</label><br>
+				<input type="radio" name="gap" value="Extremely unlikely" id="EU">
+				<label for="EU">Extremely unlikely</label><br>
+			</div> 
+		</div>
+		<div class="question">
+			<h4>If classes were to go online this fall, how likely are you take class at a community college?</h4>
+			<div id="CC"></div>
+			<div class="radio">
+				<input type="radio" name="CC" value="Extremely likely" id="EL">
+				<label for="EL">Extremely likely</label><br>
+				<input type="radio" name="CC" value="Somewhat likely" id="SL">
+				<label for="SL">Somewhat likely</label><br>
+				<input type="radio" name="CC" value="Neither" id="Neither">
+				<label for="Neither">Neither likely or unlikely</label><br>
+				<input type="radio" name="CC" value="Somewhat unlikely" id="SU">
+				<label for="SU">Somewhat unlikely</label><br>
+				<input type="radio" name="CC" value="Extremely unlikely" id="EU">
+				<label for="EU">Extremely unlikely</label><br>
+			</div>
+		</div>
+		<div class="question">
+			<h3>Thank you for your participation!</h3>
+			<p id="surveyTime"></p>
+		</div>
+		<div class="navButtons">
+			<button type="button" id="prevButton" onclick="previous()">Previous</button>
+			<button type="button" id="nextButton" onclick="next()">Next</button>
+			<button type="button" id="skipButton" onclick="skip()">Skip</button>
+		</div>
+	</form>
+
+
+	<h2>Organizations</h2>
+	<img id="studentsImg" src="images/students.jpg">
+	<p>There are <em>over 300</em> registered student organizations in categories like academics, arts, and music, club sports, cultural, educational, Greek, honor, political, recreation, religious, service learning, special interest, and spirit.  Click here to browse all UT Dallas Student Organizations.</p>
+	
+	<div class="studentp">
+		<h3>ACM Special Interest Groups</h3>
+		<p>ACM UTD is the official University of Texas at Dallas Student Chapter of the Association for Computing Machinery (ACM). ACM UTD is focused on giving back to the engineering community here at UT Dallas and beyond through events, projects, ACM Labs, ACM Industry Series, HackUTD, and more</p>
+	</div>
+	
+	<div class="studentp">
+		<h3>Computing Scholars Program</h3>
+		<p>The Computing Scholars Honor Program (CS2) is designed to attract students with excellent academic records and provide them a cohort elite style of classes taught by our best instructors at a deeper level of theory and mathematics. The program aims to prepare participants for a career in research in academia, or at top industrial research labs and top high-tech companies.</p>
+		<p>The Computing Scholars Program has a specially designed curriculum based on fundamental mathematical and scientific principles. The courses integrate discussion of current research, recent discoveries, and open problems into a rich logical progression of firmly related topics.</p>
+		<p>Admission to the program is mainly by invitation and will be limited to no more than 30 students per year. The selection committee also entertains nominations from parents, teachers, and others familiar with an applicant’s academic standing.</p>
+	</div>
+
+	<div class="studentp">
+		<h3>Center for Computer Science Education & Outreach (K-12)</h3>
+		<p>The UT Dallas Center for Computer Science Education & Outreach (CCSEO) provides summer camps, workshops during school breaks/holidays, weekend clubs, online clubs, programming contests, custom workshops & campus tour for schools, custom camps/workshops off-site for schools/groups, weekly after-school clubs in nearby schools, teaching training workshops, career day presentations, FREE workshops to the community on MLK day of service, hands-on workshops for UT Dallas students and professional development workshops for adults.</p>
+	</div>
+
+	<div class="studentp">
+		<h3>Living Learning Communities</h3>
+		<p>Living Learning Communities are groups of freshman students who share academic goals and interests. LLC members live in designated residence halls, enroll in community-specific courses and participate in group activities designed to enhance learning. LLC students typically develop peer relationships more quickly, enjoy increased faculty interaction outside the classroom and maintain higher GPAs.</p>
+	</div>
+	
+	<div class="studentp">
+		<h3>Women Who Compute (WWC)</h3>
+		<p>Women Who Compute (WWC) is a student organization dedicated to cultivating a community of female engineering and computer science students at The University of Texas at Dallas. They provide mentorship and support to women in computing, personal and professional development, and encourage women to pursue a career in the field of engineering and computer science.</p>
+	</div>
+	
+	<h2>Tutoring</h2>
+	<div class="studentp">
+		
+		<h3>The Computer Science Mentor Center</h3>
+		<img id="csmcImg" src="images/csmc.jpg">
+		<p>The Computer Science Mentor Center (CSMC) welcomes students of Computer Science and Software Engineering who are studying Discrete Mathematics and Programming to augment and integrate their classroom learning. A solid understanding of Computer Programming and Discrete Mathematics is essential to the success of Computer Science and Software Engineering students. The Mentor Center provides focused learning activities to help students gain this expertise.</p>
+
+		<p>The Mentor Center is open 7 days a week. It offers a variety of services designed to enhance and reinforce classroom activities by engaging students in an immersive environment. Students receive on-the-spot individualized or group tutoring. They attend review sessions tightly integrated with classroom lectures. Students can study and do their homework at the Center, where expert coaching is readily available.</p>
+
+		<p>The Center is located in ECSS 4.415. Mentoring and tutoring is offered for CS 1336 (Programming Fundamentals), CS 1337 (Computer Science I), CS 2336 (Computer Science II), CS 2305 (Discrete Math I), CS 3305 (Discrete Math II), CS 3340 (Computer Architecture) and SE 3306 (Math Foundations of SE).</p>
+	</div>
+</div>
+
+
+<div class="right">
+		<h2>Events</h2>
+		<h4>June 11</h4>
+		<ul>
+			<li>Web Programming Tutorial - Richard Min</li>
+			<li>Azure AI Engineering Online Workshop</li>
+		</ul>
+		<h4>June 13</h4>
+		<ul>
+			<li>Architecting on AWS: Hands-on Workshop</li>
+			<li>Deep-dive into Testing</li>
+		</ul>
+		<h4>June 14</h4>
+		<ul>
+			<li>Architecting on AWS: Hands-on Workshop</li>
+			<li>HTML and JavaScript Review</li>
+		</ul>
+		<h4>June 15</h4>
+		<ul>
+			<li>Front End Development with Angular</li>
+		</ul>
+		<h4>June 16</h4>
+		<ul>
+			<li>Front End Development with Angular</li>
+		</ul>
+		<h4>June 17</h4>
+		<ul>
+			<li>Front End Development with Angular</li>
+		</ul>
+		<h4>June 18</h4>
+		<ul>
+			<li>Web Programming Tutorial - Richard Min</li>
+		</ul>
+		<h4>June 20</h4>
+		<ul>
+			<li>Front End Development with Angular</li>
+			<li>AWS Saturday Training Series</li>
+			<li>Architecting on AWS: Hands-on Workshop</li>
+		</ul>
+	</div>
+
+
+<div class="footer">
+	<a href="contact.html">Contact</a>
+	<p>Copyright © 2020 - The University of Texas at Dallas - Erik Jonsson School of Engineering & Computer Science - Department of Computer Science</p>
+	<p>Katherine Thompson KRT021000</p>
+	<p id="date"></p>
+	<button type="button" onclick="changeBackground()">Change Background</button>
+	<button type="button" onclick="increaseFont()">Increase Font Size</button>
+</div>
+
+<script type="text/javascript" src="utd.js"></script>
+</body>
+</html>

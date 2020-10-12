@@ -1,0 +1,503 @@
+body {
+	font-family: "Trebuchet MS", sans-serif;
+	background-color: #e6e6e6;
+}
+
+h2 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+#box {
+	height: 35px;
+	width: 35px;
+	vertical-align: text-top;
+}
+.contact {
+	width: 26%;
+	float: right;
+	border-width: 3px;
+	border-style: double;
+	border-color: #083601;
+	padding-left: 15px;
+	margin-top: 15px;
+	margin-right: 10px;
+	box-shadow: 10px 10px 5px #808080;
+	background-color: #e6e6e6;
+	background-image: url("images/csbuilding.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 320px;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #cf6f02;
+	box-shadow: 5px 5px 5px #808080;
+}
+
+.mycontainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #cf6f02;
+	box-shadow: 5px 5px 5px #808080;
+}
+
+
+.container a {
+	/*border: 1px solid black;*/
+	padding: 15px 6.2%;
+	font-family: "Trebuchet MS", sans-serif;
+	color: white;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px black;
+}
+
+.mycontainer a {
+	/*border: 1px solid black;*/
+	padding: 15px 6.2%;
+	font-family: "Trebuchet MS", sans-serif;
+	color: white;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px black;
+}
+
+.container a:hover {
+	background-color: #ebb06e;
+}
+
+.mycontainer a:hover {
+	background-color: #ebb06e;
+}
+
+.container a:active {
+	color: #083601;
+}
+
+.mycontainer a:active {
+	color: #083601;
+}
+
+#csmcImg {
+	display: inline;
+	float: right;
+	width: 40%;
+}
+
+#fnameAlpha, #lnameAlpha, #radioWrong, #emailWrong, #numWrong, #commentsWrong {
+	font-size: 0.8em;
+	color: red;
+}
+
+.footer {
+	clear: both;
+	text-align: center;
+	padding: 30px 0px 15px 0px;
+	background-color: #083601;
+	color: white;
+	font-family: "Trebuchet MS", sans-serif;
+	/*background: no-repeat left/10% url(logo2.jpg);*/
+}
+	
+
+.footer p {
+	font-size: .8em;
+}
+
+.footer a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.3em;
+}
+
+.footer a:hover {
+	opacity: 0.5;
+}
+
+form h4 {
+	background-color: #cf6f02;
+	text-shadow: 1px 1px 2px black;
+	color: white;
+	padding: 8px 0px 8px 5px;
+}
+
+.header {
+	background-color: #083601;
+	color: white;
+	text-align: center;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 1.4em;
+	text-shadow: 1px 1px 2px black;
+	box-shadow: 5px 5px 5px #808080;
+}
+
+.myheader {
+	background-color: #083601;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 2.8em;
+	text-shadow: 1px 1px 2px black;
+	box-shadow: 5px 5px 5px #808080;
+	font-weight: bold;
+}
+
+.test {
+	background-color: #083601;
+	color: white;
+	text-align: center;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 1.4em;
+	text-shadow: 1px 1px 2px black;
+	box-shadow: 5px 5px 5px #808080;
+}
+
+#hidden {
+	visibility: hidden;
+}
+
+#letter {
+	height: 20px;
+	width: 30px;
+	vertical-align: text-top;
+}
+
+#logo {
+	height: 250px;
+	width: 250px;
+}
+
+.left {
+	float: left;
+	box-shadow: 5px 5px 5px #808080;
+	margin-top: 15px;
+	/*border: 1px solid black;*/
+}
+
+.middle {
+	width: 51%;
+	float: left;
+	/*border: 1px solid black;*/
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 15px;
+	background-color: white;
+	line-height: 1.6;
+}
+
+
+.middle li {
+	line-height: 1.6;
+
+}
+
+.middle li p {
+	font-weight: bold;
+}
+
+
+#mission {
+	padding-bottom: 30px;
+	font-size: 1.2em;
+}
+
+
+
+#midHeader {
+	font-size: 3em;
+	padding-bottom: 0;
+}
+
+
+#phone2 {
+	height: 30px;
+	width: 30px;
+	vertical-align: text-top;
+}
+
+.right {
+	width: 26%;
+	float: right;
+	border-width: 3px;
+	border-style: double;
+	border-color: #083601;
+	padding-left: 15px;
+	margin-top: 15px;
+	margin-right: 10px;
+	box-shadow: 5px 5px 5px #808080;
+	background-color: #e6e6e6;
+}
+
+.right h2 {
+	background-color: #083601;
+	color: white;
+	padding-left: 5px;
+	text-shadow: 1px 1px 2px black;
+}
+
+.right dt {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.right dd {
+	text-align: justify;
+	padding-right: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+
+#studentsImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.studentp {
+	margin-bottom: 60px;
+}
+
+table {
+	table-layout: fixed;
+	width:100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+td {
+	padding-left: 10px;
+	line-height: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+thead th {
+	padding-left: 10px;
+	font-size: 1.7em;
+	background-color: #083601;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #e6e6e6;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #b1bdb2;
+}
+
+tr td:nth-child(1) {
+	font-weight: bolder;
+}
+
+.textpad {
+	padding-bottom: 20px;
+}
+
+.textpad th {
+	padding-left: 10px;
+	background-color: #083601;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
+
+/***************ASSIGNMENT 3***************/
+#ballardEducation, #ballardResearch, #ballardHonors, #ballardPubs, #vijayEducation, 
+#vijayResearch, #vijayHonors, #vijayPubs, #choiEducation, #choiResearch, 
+#choiHonors, #choiPubs {
+	display: none;
+}
+
+
+.bottomBox div {
+	padding-left: 5px ;
+	border: 1px solid #083601;
+	margin: 10px 10px 10px 10px;
+	font-size: .8em;
+}
+
+.bottomBox h3 {
+	font-style: italic;
+}
+
+.bottomLink:hover {
+	color: #cf6f02;
+}
+
+.footer button {
+	color: white;
+	text-transform: uppercase;
+	background: #cf6f02;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+.footer button:hover {
+	background-color: #eba454;
+}
+
+.navButtons {
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+
+#nextButton, #prevButton, #skipButton {
+	display: none;
+	color: white;
+	text-transform: uppercase;
+	background: #083601;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+.outerWrapper {
+	border: 2px solid #083601;
+	margin-bottom: 30px;
+}
+
+.question {
+	display: none;
+}
+
+.question h3 {
+	background-color: #cf6f02;
+	text-shadow: 1px 1px 2px black;
+	color: white;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.radio {
+	padding-left: 20px;
+}
+
+.surveyContainer {
+	border: 1px solid grey;
+	box-shadow: 5px 5px 5px #808080;
+	padding-bottom: 20px;
+	margin-bottom: 50px;
+}
+
+.surveyStart {
+	text-align: center;
+}
+
+.surveyStart button {
+	color: white;
+	text-transform: uppercase;
+	background: #083601;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+.surveyStart h2 {
+	background-color: #cf6f02;
+	text-shadow: 1px 1px 2px black;
+	color: white;
+}
+
+.surveySummary {
+	display: none;
+}
+
+#surveyTime {
+	text-align: center;
+}
+
+.topBox {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.topBox div {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+
+/************************ASSIGNMENT 4 *************************/
+
+.researchHide {
+	display: none;
+}
+
+.researchHeader h2 {
+	background-color: #b1bdb2;
+	color: #083601;
+	padding-left: 3px;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.researchHeader h2:hover {
+	color: #cf6f02;
+}
+
+.researchHeader img {
+	width: 100%;
+}
+
+.showHide {
+	display: inline-block;
+}
+
+/***********************ASSIGNMENT 6 *********************/
+
+.loginContainer {
+	padding: 8px 0 8px 5px;
+	background-color: #b1bdb2;
+	margin-top: 5px;
+}
+
+.loginContainer a {
+	color: white;
+	text-decoration: none;
+	padding-left: 10px;
+}
+
+.loginContainer a:hover {
+	opacity: 0.5;
+}
+
+.loginDiv h1 {
+	background-color: #cf6f02;
+	text-shadow: 1px 1px 2px black;
+	color: white;
+	text-align: center;
+}
+
+.registerContainer h1 {
+	background-color: #cf6f02;
+	text-shadow: 1px 1px 2px black;
+	color: white;
+	text-align: center;
+}
+
+.registerbtn, .loginbtn, .applybtn {
+	color: white;
+	text-transform: uppercase;
+	background: #083601;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UTD CS Faculty</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body onload="getDate()">
+
+<div class="header">
+	<h1>The University of Texas at Dallas Department of Computer Science</h1>
+</div>
+
+<div class="container">
+	<a href="index.html">Home</a>
+	<a href="faculty.html">Faculty</a>
+	<a href="students.html">Students</a>
+	<a href="admissions.html">Admissions</a>
+	<a href="contact.html">Contact</a>
+	<a href="research.html">Research</a>
+</div>
+
+<div class="loginContainer">
+	<a href="register.html">Register</a>
+	<a href="login.html">Login</a>
+	<a href="logout.php">Logout</a>
+</div>
+
+<div class="left">
+		<img src="images/logo.jfif" id="logo">	
+</div>
+
+<div class="middle">
+	<h2 id="midHeader">Faculty</h2>
+
+	<div class="outerWrapper">
+		<div class="topBox">
+			<div>
+				<img src="images/ballardDana.jpg" alt="Dana Ballard" width="280" height="187">
+			</div>
+			<div>
+				<h2>Name</h2>
+				<h3>Dana Ballard</h3>	
+			</div>
+			<div>
+				<h3>Email</h3>
+				<p>dana@utdallas.edu</p>
+				<h3>Office Location</h3>
+				<p>GDC 3.510</p>
+			</div>
+		</div>
+
+		<div class="bottomBox">
+			<div>
+				<h3 class="bottomLink" onclick="showText(document.getElementById('ballardEducation'))">Education</h3>
+				<p id="ballardEducation">University of California, Irvine</p>
+			</div>
+			<div>
+				<h3 class="bottomLink" onclick="showText(document.getElementById('ballardResearch'))">Research Interests</h3>
+				<p id="ballardResearch">Computational theories of the brain, Emphasis on human vision and motor control</p>
+			</div>
+			<div>
+				<h3 class="bottomLink" onclick="showText(document.getElementById('ballardHonors'))">Major Honors and Awards</h3>
+				<p id="ballardHonors">1989 - Best Paper, International Joint Conference on Artificial Intelligence <br>1991 - ICCV Test of Time Award <br>UC Merced Distinguished Cognitive Scientist Award - 2014</p>
+			</div>
+			<div>
+				<h3 class="bottomLink" onclick="showText(document.getElementById('ballardPubs'))">Publications</h3>
+				<p id="ballardPubs">Sprague, N. and Ballard, D. H.. 2007.<em> “Modeling Embodied Visual Behaviors”.</em> ACM Trans. on Applied Perception. <br>Hayhoe, M. M., and Ballard, D. H.. 2005. <em>“Eye Movements in Natural Behavior”.</em> Trends in Cognitive Science.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="outerWrapper">
+		<div class="topBox">
+			<div>
+				<img src="images/chidambaramVijay.jpg" alt="Vijay Chidambaram" width="280" height="187">
+			</div>
+			<div>
+				<h2>Name</h2>
+				<h3>Vijay Chidambaram</h3>	
+			</div>
+			<div>
+				<h3>Email</h3>
+				<p>vijay@utdallas.edu</p>
+				<h3>Office Location</h3>
+				<p>GDC 6.436</p>
+			</div>
+		</div>
+
+		<div class="bottomBox">
+			<div>
+				<h3 class="bottomLink" onclick="showText(document.getElementById('vijayEducation'))">Education</h3>
+				<p id="vijayEducation">University of Wisconsin</p>
+			</div>
+			<div>
+				<h3 class="bottomLink" onclick="showText(document.getElementById('vijayResearch'))">Research Interests</h3>
+				<p id="vijayResearch">Operating systems, Distributed systems</p>
+			</div>
+			<div>
+				<h3 class="bottomLink" onclick="showText(document.getElementById('vijayHonors'))">Major Honors and Awards</h3>
+				<p id="vijayHonors">2018 - Best Paper Award, ATC <br>2017 - Best Paper Award, FAST <br>2014 - Microsoft Research Graduate Fellowship</p>
+			</div>
+			<div>
+				<h3 class="bottomLink" onclick="showText(document.getElementById('vijayPubs'))">Publications</h3>
+				<p id="vijayPubs">Jayashree Mohan, Ashlie Martinez, Soujanya Ponnapalli, Pandian Raju, Vijay Chidambaram. 2018. <em>Finding Crash-Consistency Bugs with Bounded Black-Box Crash Testing </em>. OSDI. <br>Pandian Raju, Soujanya Ponnapalli, Evan Kaminsky, Gilad Oved, Zachary Keener, Vijay Chidambaram, Ittai Abraham . 2018. <em>mLSM: Making Authenticated Storage Faster in Ethereum.</em> HotStorage.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="outerWrapper">
+		<div class="topBox">
+			<div>
+				<img src="images/choiEunsol.jpg" alt="Eunsol Choi" width="280" height="187">
+			</div>
+			<div>
+				<h2>Name</h2>
+				<h3>Eunsol Choi</h3>	
+			</div>
+			<div>
+				<h3>Email</h3>
+				<p>eunsol@utdallas.edu</p>
+				<h3>Office Location</h3>
+				<p>GDC 4.356</p>
+			</div>
+		</div>
+
+		<div class="bottomBox">
+			<div>
+				<h3 class="bottomLink" onclick="showText(document.getElementById('choiEducation'))">Education</h3>
+				<p id="choiEducation">University of Washington</p>
+			</div>
+			<div>
+				<h3 class="bottomLink" onclick="showText(document.getElementById('choiResearch'))">Research Interests</h3>
+				<p id="choiResearch">Machine Learning, Reading comprehension, Question answering</p>
+			</div>
+			<div>
+				<h3 class="bottomLink" onclick="showText(document.getElementById('choiHonors'))">Major Honors and Awards</h3>
+				<p id="choiHonors">2018 - Facebook Research Fellowship</p>
+			</div>
+			<div>
+				<h3 class="bottomLink" onclick="showText(document.getElementById('choiPubs'))">Publications</h3>
+				<p id="choiPubs">E. Choi, S. Chatterjee, L. R. Bachega, et al., Design and exploitation of a high-performance SIMD floating-point unit for BlueGene/L, IBM J. R&D, 49 (2/3), 377–392.<br>T. Agerwala, E. Choi, S. Chatterjee, Computer Architecture: Challenges and Opportunities for the Next Decade, IEEE Micro 25(3), 58–69.</p>
+			</div>
+		</div>
+	</div>
+
+<!-- middle div -->
+</div>
+
+
+<div class="right">
+		<h2>Events</h2>
+		<h4>June 11</h4>
+		<ul>
+			<li>Web Programming Tutorial - Richard Min</li>
+			<li>Azure AI Engineering Online Workshop</li>
+		</ul>
+		<h4>June 13</h4>
+		<ul>
+			<li>Architecting on AWS: Hands-on Workshop</li>
+			<li>Deep-dive into Testing</li>
+		</ul>
+		<h4>June 14</h4>
+		<ul>
+			<li>Architecting on AWS: Hands-on Workshop</li>
+			<li>HTML and JavaScript Review</li>
+		</ul>
+		<h4>June 15</h4>
+		<ul>
+			<li>Front End Development with Angular</li>
+		</ul>
+		<h4>June 16</h4>
+		<ul>
+			<li>Front End Development with Angular</li>
+		</ul>
+		<h4>June 17</h4>
+		<ul>
+			<li>Front End Development with Angular</li>
+		</ul>
+		<h4>June 18</h4>
+		<ul>
+			<li>Web Programming Tutorial - Richard Min</li>
+		</ul>
+		<h4>June 20</h4>
+		<ul>
+			<li>Front End Development with Angular</li>
+			<li>AWS Saturday Training Series</li>
+			<li>Architecting on AWS: Hands-on Workshop</li>
+		</ul>
+</div>
+
+<div class="footer">
+	<a href="contact.html">Contact</a>
+	<p>Copyright © 2020 - The University of Texas at Dallas - Erik Jonsson School of Engineering & Computer Science - Department of Computer Science</p>
+	<p>Katherine Thompson KRT021000</p>
+	<p id="date"></p>
+	<button type="button" onclick="changeBackground()">Change Background</button>
+	<button type="button" onclick="increaseFont()">Increase Font Size</button>
+</div>
+
+<script type="text/javascript" src="utd.js"></script>
+</body>
+</html>

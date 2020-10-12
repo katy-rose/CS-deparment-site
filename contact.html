@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact UTD Computer Science</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body onload="getDate()">
+
+<div class="header">
+	<h1>The University of Texas at Dallas Department of Computer Science</h1>
+</div>
+
+<div class="container">
+	<a href="index.html">Home</a>
+	<a href="faculty.html">Faculty</a>
+	<a href="students.html">Students</a>
+	<a href="admissions.html">Admissions</a>
+	<a href="contact.html">Contact</a>
+	<a href="research.html">Research</a>
+</div>
+
+<div class="loginContainer">
+	<a href="register.html">Register</a>
+	<a href="login.html">Login</a>
+	<a href="logout.php">Logout</a>
+</div>
+
+
+	<div class="left">
+		<img src="images/logo.jfif" id="logo">	
+	</div>
+
+
+	<div class="middle">
+
+		<h2 id="midHeader">Contact Us</h2>
+
+		<form id="contactForm">
+			<div class="textpad">
+			<label for="first name">First Name: </label>
+	 		<input type="text" id="first name" name="first" onchange="inputColor(document.getElementById('first name'))"><span id="fnameAlpha"></span>
+		 	</div>
+		 	<div class="textpad">
+		 		<label for="last name">Last Name: </label>
+		 		<input type="text" id="last name" name="last" onchange="inputColor(document.getElementById('last name'))"><span id="lnameAlpha"></span>
+		 	</div>
+
+		 	<div class="textpad">
+				Gender:
+				<label><input type="radio" name="gender" id="male"> Male</label>
+				<label><input type="radio" name="gender" id="female"> Female</label>
+				<label><input type="radio" name="gender" id="Other"> Other</label>
+				<span id="radioWrong"></span>
+		 	</div>
+		 	
+		 	<div class="textpad">
+		 		<label>Email: <input id="email" type="email" name="email" onchange="inputColor(document.getElementById('email'))"></label><span id="emailWrong"></span>
+		 	</div>
+
+		 	<div class="textpad">
+		 		<label>Telephone: <input id="telephone" type="text" name="phone" onchange="inputColor(document.getElementById('telephone'))"></label><span id="numWrong"></span>
+		 	</div>
+
+		 	<label for="comments">Comments:</label><br>
+
+			<textarea id="comments" rows="10" cols="50" onchange="inputColor(document.getElementById('comments'))"></textarea>
+			<br><span id="commentsWrong"></span>
+			<div class="textpad">
+		 		<input type="button" value="Submit" onclick="validateContact()">
+		 	</div>
+		 	<span id="submitSuccess" style="font-weight: bold"></span>
+		</form>
+		
+
+		
+		
+		<h2>General Contact Information <img src="images/phone.jpg" id="phone2"></h2>
+
+		<p>Phone: 972-883-2185 <br>Fax: 972-883-2399 <br>E-mail:<br>interest@utdallas.edu (For Undergraduate admissions) <br>
+		gradecs@utdallas.edu (For Graduate admissions) <br>
+		csdept@utdallas.edu (For all other inquiries)</p>
+		
+		<h2>Mailing Address <img src="images/letter.jpg" id="letter"></h2>
+		<p>Department of Computer Science <br>Erik Jonsson School of Engineering & Computer Science <br>The University of Texas at Dallas <br>800 W. Campbell Road; MS EC31 <br>Richardson, TX 75080 U.S.A.</p>
+		
+		<h2>Shipping Address <img src="images/box.jpg" id="box"></h2>
+		<p>The University of Texas at Dallas <br>Erik Jonsson School of Engineering & Computer Science <br>Department of Computer Science – MS EC31 <br>2601 North Floyd Road <br>Richardson, TX 75083-0688 U.S.A.</p>
+
+		<h3 id="hidden">Text to take up space and hide</h3>
+	</div>
+
+	<div class="contact">
+		<h6>Engineering and Computer Science South Building</h6>
+	</div>
+
+
+<div class="footer">
+	<a href="contact.html">Contact</a>
+	<p>Copyright © 2020 - The University of Texas at Dallas - Erik Jonsson School of Engineering & Computer Science - Department of Computer Science</p>
+	<p>Katherine Thompson KRT021000</p>
+	<p id="date"></p>
+	<button type="button" onclick="changeBackground()">Change Background</button>
+	<button type="button" onclick="increaseFont()">Increase Font Size</button>
+</div>
+
+<script type="text/javascript" src="utd.js"></script>
+</body>
+</html>

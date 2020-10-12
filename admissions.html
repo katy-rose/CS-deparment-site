@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UTD CS Admissions</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body onload="getDate()">
+
+<div class="myheader">
+	<p>The University of Texas at Dallas Department of Computer Science</p>
+</div>
+
+
+<div class="mycontainer">
+	<a href="index.html">Home</a>
+	<a href="faculty.html">Faculty</a>
+	<a href="students.html">Students</a>
+	<a href="admissions.html">Admissions</a>
+	<a href="contact.html">Contact</a>
+	<a href="research.html">Research</a>
+</div>
+
+<div class="loginContainer">
+	<a href="register.html">Register</a>
+	<a href="login.html">Login</a>
+	<a href="logout.php">Logout</a>
+</div>
+
+<div class="left">
+	<img src="images/logo.jfif" id="logo">	
+</div>
+
+<div class="middle">
+
+	<h2 id="midHeader">Admissions</h2>
+
+	<div class="card">
+	  <div class="card-body">
+	    <h5 class="card-title">Application Process</h5>
+	    <p class="card-text">
+	    	<ol>
+				<li>Complete the online application below.</li>
+				<li>Pay the $50 non-refundable application fee or waive this fee by attending Scholars' Day or by submitting an approved SAT/ACT fee waiver.</li>
+				<li>Submit your official SAT or ACT scores to UT Dallas: the SAT code is 6897 and ACT code is 4243.</li>
+				<li>Request an official high school transcript to be sent electronically or mailed in a sealed envelope to the following address: <p>The University of Texas at Dallas <br>Office of Admission and Enrollment <br>800 W Campbell Rd <br>Richardson, TX 75080-3021</p></li>
+			</ol>
+	    </p>
+	  </div>
+	</div>
+	<hr>
+
+	<div>
+		<div class="textpad">
+			<h4>Curious if you have been accepted? Click here:</h4>
+			<form action="http://localhost/admissionsResults.php" method="get">
+				<input type="submit" value="Admissions Results" class="btn btn-success">
+			</form>
+		</div>
+		<div class="textpad">
+			<h4>Interested in admission statistics? Click here:</h4>
+			<form action="http://localhost/statistics.php" method="get">
+				<input type="submit" value="Admission Statistics" class="btn btn-success">
+			</form>
+		</div>
+	</div>
+
+	<hr>
+	<h2>UT Dallas Online Application</h2>
+	<form method="post" action="http://localhost/admission.php" name="admissionsForm" onsubmit="return(validateAdmissions());">
+		<div class="textpad">
+			<label for="first name">First Name: </label>
+	 		<input type="text" id="first name" name="first">
+	 		<span id="firstError"></span>
+	 	</div>
+	 	<div class="textpad">
+	 		<label for="last name">Last Name: </label>
+	 		<input type="text" id="last name" name="last">	
+	 		<span id="lastError"></span>
+	 	</div>
+	 	<div class="textpad">
+	 		<label for="SAT">SAT Score: </label>
+	 		<input type="text" id="SAT" name="SATScore">
+	 		<span id="SATError"></span>	
+	 	</div>
+
+	 	<div class="textpad">
+	 		<label>GPA: <input type="text" name="GPA" placeholder="3.11"></label>
+	 		<span id="GPAError"></span>
+	 	</div>
+
+	 	<div class="textpad">
+	 		<label for="dateOfBirth">Date of Birth: </label>
+	 		<input type="date" name="dob" id="dateOfBirth">
+	 		<span id="DOBError"></span>
+	 	</div>
+
+	 	<div class="textpad">
+	 		<label>Home Address: <input type="text" name="address"></label>
+	 		<span id="addressError"></span>
+	 	</div>
+
+	 	<div class="textpad">
+	 		<label>Zipcode: <input type="text" name="zipcode"></label>
+	 		<span id="zipcodeError"></span>
+	 	</div>
+	 	
+	 	<div class="textpad">
+	 		<input type="submit" class="btn btn-success" value="Apply">
+	 	</div>
+	 		
+	</form>
+	
+</div>
+
+<div class="right">
+		<h2>Fees and Deadlines</h2>
+		<dl>
+			<dt>Fees</dt>
+			<dd>The non-refundable application fee is $50 for applications submitted on or before the regular application deadline or $125 for applications submitted after the regular application deadline.</dd>
+			<dd>Applicants with international academic documents will be assessed an additional international credential evaluation fee of $50.</dd>
+			<dd>Submit qualifying application fee waivers (SAT, ACT, NACAC, and/or proof of military service) in the App Fee Waiver Submission folder in your Galaxy account under the Admissions Form Folder.</dd>
+			<dt>Deadlines</dt>
+			<dd>UT Dallas encourages all students to submit their application and complete their files as early as possible. An application file is considered “complete” for review when official academic transcripts, test scores, and the ApplyTexas application are received.</dd>
+			<dd>Completed applications are reviewed on a rolling basis. During peak application periods, it can take four to six weeks for an application file to be reviewed.</dd>
+			<dd>Applications completed after the regular deadline will continue to be processed, but applicants may not receive a decision in time to avoid late class registration.</dd>
+		</dl>
+	</div>
+
+
+<div class="footer">
+	<a href="contact.html">Contact</a>
+	<p>Copyright © 2020 - The University of Texas at Dallas - Erik Jonsson School of Engineering & Computer Science - Department of Computer Science</p>
+	<p>Katherine Thompson KRT021000</p>
+	<p id="date"></p>
+	<button type="button" onclick="changeBackground()">Change Background</button>
+	<button type="button" onclick="increaseFont()">Increase Font Size</button>
+</div>
+
+<script type="text/javascript" src="utd.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
